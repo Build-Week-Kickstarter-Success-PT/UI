@@ -265,7 +265,7 @@ Main Content Styles
 .top-content .first-feature .background-img .fourth-widget p {
     width: 25rem;
     padding: 2rem;
-    padding-top: 1rem;
+    padding-top: .5rem;
 }
 /**********************************************************************************************
 Button Styles
@@ -360,7 +360,7 @@ Slideshow Styles (working on getting this to function)
     border-bottom: 1px #d2d8d8 dashed;
 }
 .middle-content .sixth-seventh-feature .seventh-feature .seventh-widget img {
-    width: 50%;
+    width: 100%;
     margin-right: 1.25rem;
     border: 1px solid #bcb7b7;
     border-radius: .35rem;
@@ -414,15 +414,41 @@ margin-right: 1.25rem;
 border: 1px solid #bcb7b7;
 border-radius: .35rem;
 }
+.sidebar-container .widgets .image-widget .widget-img button {
+    margin-top: .5rem;
+}
 .sidebar-container .widgets .testimonial-widget {
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+.sidebar-container .widgets .testimonial-widget .testimonial {
     background: url("../img/pexels-christina-morillo-1181686.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid #bcb7b7;
     border-radius: .35rem;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
 }
-.sidebar-container .widgets .image-widget .widget-img button {
-    margin-top: .5rem;
+.sidebar-container .widgets .testimonial-widget .testimonial p {
+    width: 25rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 20rem;
+}
+.sidebar-container .widgets .ad-widget {
+    background: url("../img/sidebar_ad.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #bcb7b7;
+    border-radius: .35rem;
+    border-bottom: .3rem #d2d8d8 dotted;
+}
+.sidebar-container .widgets .ad-widget .ad p {
+    width: 20rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 20rem;
 }
 /********************************************************************************
 Footer Styles
