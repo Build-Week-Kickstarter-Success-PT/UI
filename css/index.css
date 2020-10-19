@@ -362,6 +362,7 @@ Slideshow Styles (working on getting this to function)
 .middle-content .sixth-seventh-feature .seventh-feature .seventh-widget img {
     width: 100%;
     margin-right: 1.25rem;
+    margin-bottom: 1.25rem;
     border: 1px solid #bcb7b7;
     border-radius: .35rem;
 }
@@ -452,6 +453,13 @@ border-radius: .35rem;
     padding-top: 3rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
+}
+.sidebar-container .widgets .contact-widget {
+    margin-top: 1.5rem;
+    padding-bottom: 0;
+}
+.sidebar-container .widgets .contact-widget .contact p {
+    line-height: 3rem;
 }
 /********************************************************************************
 Footer Styles
