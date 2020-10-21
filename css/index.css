@@ -464,8 +464,10 @@ border-radius: .35rem;
 /********************************************************************************
 Footer Styles
 ********************************************************************************/
-.footer {
+.footer-container {
     background: black;
+}
+.footer-container .footer {
     width: 100%;
     text-align: center;
     left: 0;
@@ -475,29 +477,75 @@ Footer Styles
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid #282525;
 }
-.footer-content {
+.footer-container .footer-two {
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    padding-top: 1.15rem;
+    padding-bottom: .6rem;
     display: flex;
-    margin: 0 2% 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #282525;
+}
+.footer-container .footer .footer-content {
+    display: flex;
+    color: #939393;
+    margin: 0 2% 2rem;
+    padding-bottom: 1rem;
     justify-content: space-around;
 }
-
-.footer-content .text-container {
-    padding-right: 4%;
+.footer-container .footer .footer-content .text-container {
+    width:32%;
+    margin-top: 4rem;
+    margin-right: 4rem;
+    padding-right: 4rem;
     text-align: left;
+    border-right: 5px solid #282525;
 }
-
-.footer-content .text-container:last-child {
+.footer-container .footer .footer-content .text-container h2, .footer-container .footer .footer-content .middle-text-container h2  {
+    color: #939393;
+    font-size: 1.6rem;
+    font-weight: normal;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted #2b2b2b;
+}
+.footer-container .footer .footer-content .text-container a {
+    color: #939393;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-decoration: none;
+}
+.footer-container .footer .footer-content .text-container a:hover {
+    color: #D03F0F;
+}
+.footer-container .footer .footer-content .middle-text-container {
+    width: 32%;
+    padding-right: 4rem;
+    margin-top: 4rem;
+    margin-right: 4rem;
+    text-align: left;
+    border-right: 5px solid #282525;
+}
+.footer-container .footer .footer-content .text-container:last-child {
+    width: 25%;
+    margin-right: 0;
     padding-right: 0;
+    border-right: none;
 }
-.footer .copyright-container div {
-  text-align:center;
-}
+.footer .copyright-container {
+    margin-top: 1rem;
+  }
 .footer .copyright-container .copyright {
   text-align: center;
   color: grey;
   font-size: 1.4rem;
-  padding-top: 2em;
+  margin-top: -1.25rem;
+  padding-top: 0;
   padding-bottom: 0;
   letter-spacing: .25em;
 }
@@ -514,6 +562,32 @@ Footer Styles
     margin-right: .5rem;
     padding: .2rem .3rem .2rem .6rem;
     font-size: 1.4rem;
+}
+/***********************************************************************************************
+Footer Navigation Menu Styles
+***********************************************************************************************/
+.footer-container .footer-two .footer-nav {
+    background: black;
+}
+.footer-container .footer-two .footer-nav .footer-navbar nav {
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.footer-container .footer-two .footer-nav .footer-navbar nav a {
+    clear: both;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-right: 0;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    letter-spacing: .25rem;
+    color:whitesmoke;
+    border-right: none;
+    text-transform: uppercase;
+}
+.footer-container .footer-two .footer-nav .footer-navbar nav a:hover {
+    background: #D03F0F;
 }
 /********************************************************************************
 Media Queries
