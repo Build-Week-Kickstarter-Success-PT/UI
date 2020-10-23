@@ -603,6 +603,13 @@ Footer Navigation Menu Styles
 .footer-container .footer-two .footer-nav .footer-navbar .nav-footer a:hover {
     background: #D03F0F;
 }
+
+.footer-container .footer-two .footer-nav .footer-navbar .nav-footer .active {
+    color: #D03F0F;
+}
+.footer-container .footer-two .footer-nav .footer-navbar .nav-footer .active:hover {
+    background: black;
+}
 /********************************************************************************
 Media Queries
 ********************************************************************************/
