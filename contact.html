@@ -17,8 +17,7 @@
     <title>Kickstarter Success - Welcome</title>
 </head>
 <body>
-    <!-------------------- Import header.html (working on getting this to function) --------
-    <div w3-include-html="header.html"></div>------------------------------->
+    <!-- Implementing subPage_wireframe ------------------------------->
     <header>
         <!-------------------- Begin title and Navigation Bar -------------------------------------->
         <section class="title-social-member">
@@ -61,7 +60,7 @@
                 <a href="index.html" title="Home">Home</a>
                 <a href="about.html" target="_blank" title="About Us">About Us</a>
                 <a href="https://kickstarter-success-1.vercel.app/" title="Our App" target="_blank">Our App</a>
-                <a href="help.html" title="Help">Help</a>
+                <a href="how.html" title="How it Works">How it Works</a>
                 <a href="#" class="active" title="Contact">Contact Us</a>
             </nav>
         </section><!-- End Topnav Bar -->
@@ -72,72 +71,21 @@
 
         <!----------- Begin featured content --------------------------------------------------->
         <section class="featured-content-container">
-
-            <!----- Begin top content ---------------------------------------------------------->
-            <section class="top-content">
-                <div class="second-feature">
-                    <h3>Kickstart Your Campaign</h3>
-                    <div class="second-widget"><img src="img/pexels-wallace-chuck-2820898.jpg" alt="Kickstart Your Campaign" title="Kickstart Your Campaign">
-                        <p>Kick start your campaign with an edge up on the competition. Our app gives you detailed insight into building a successful Kickstarter campaign.</p>
-                    </div>
-                    <p><a href="https://kickstarter-success-1.vercel.app/" title="Login" target="_blank"><button>Login</button></a></p>
-                </div>
-                <div class="third-feature">
-                    <h3>Get Custom Data</h3>
-                    <div class="third-widget"><img src="img/pexels-markus-spiske-3671146.jpg" alt="Get Custom Data" title="Get Custom Data">
-                        <p>Our app uses machine learning techniques to analyze past data in order to predict the likelihood of success of your Kickstarter campaign.</p>
-                    </div>
-                    <p><a href="help.html" title="See How It Works"><button>See How It Works</button></a></p>
-                </div>
-                <div class="first-feature">
-
-                    <!-------Begin Featured Slider 
-                    <div class="slider">
-                        (working on getting this function)
-                    </div> ----- End slider --->
-
-                    <div class="background-img">
-                        <h2>Get Better Results With <span style="font-weight:heavy; color:#D03F0F;">K</span><span class="checkmark">&#x2714;</span>S Campaign Management</h2>
-                        <div class="fourth-widget">
-                            <h3>Make Our Team<br/>&nbsp;Your Team</h3>
-                            <p>The designers and programmers at <span style="font-weight:heavy; color:#D03F0F;">K</span><span class="checkmark">&#x2714;</span><span style="color:white">S</span> help guide motivated people like you to create successful Kickstarter campaigns.</p>
-                            <p><a href="contact.html" title="Contact Us"><button>Contact Us</button></a></p>  
-                        </div>
-                    </div>
-
-                </div><!-- End first feature --->
-            </section><!----- End top content ---->
         
             <!----- Begin middle content ------------------------------------------------------->
             <section class="middle-content">
                 
                 <div class="fifth-feature">
-                    <h3>Drawing a blank? We Have Ideas!</h3>
-                    <div class="fifth-widget"><img src="img/pexels-pixabay-355948.jpg" alt="Drawing a blank? We have ideas!" title="Drawing a blank? We have ideas!">
-                        <p>Kickstarter has opportunities for you in Arts, Comics & Illustration, Design & Tech, Film, Food & Craft, Games, Music, and Publishing. We have experience in each of these categories. Our experts can spark your creativity and help you save time and money on your Kickstarter campaign.
+                    <h1>Contact Us</h1>
+                    <div class="fifth-widget"><img src="img/pexels-tima-miroshnichenko-5453833.jpg" alt="Lady wearing phone headset" title="Contact Us">
+                        <p>We're Here to Help!
+                        <br/><br/>
+                        Contact us to begin your Kickstarter campaign. For help with our Kickstarter Success App, view the walkthrough video at the top the right sidebar. You can also review our "<a href="how.html" title="link to 'How it Works' page">How it Works</a>" page.
                         <br/>
-                        <a href="contact.html" title="Contact Us"><button>Contact Us</button></a></p>
+                        <br/>email: team@kickstartersuccess.com
+                        <br/>phone: 1 (888) 999 - 1010</p>
                     </div>
-                </div>
-                <div class="sixth-seventh-feature">
-                    <div class="sixth-feature">
-                        <h3>Get Our "Do It Yourself" Campaign Kit</h3>
-                        <div class="sixth-widget"><img src="img/pexels-fauxels-3183145.jpg" alt="Get Our 'Do It Yourself' Campaign Kit" title="Get Our 'Do It Yourself' Campaign Kit">
-                            <p>Our "Do It Yourself" campaign kit will guide you in setting an attainable goal and designing your Kickstarter project. Learn how to build a website, create a video and social media, and ask for support without sounding like a sales rep.
-                            </p>
-                        </div>
-                        <p><a href="contact.html" title="Contact Us"><button>Contact Us</button></a></p>
-                    </div>
-
-                    <div class="seventh-feature">
-                        <h3>Start Local. Go Global!</h3>
-                        <div class="seventh-widget"><img src="img/pexels-pixabay-269633.jpg" alt="Start Local. Go Global!" title="Start Local. Go Global!">
-                            <p>Let us amplify your Kickstarter campaign with global reaching techniques. We'll take your campaign around the world in 60 seconds!
-                            </p>
-                        </div>
-                        <p><a href="contact.html" title="Contact Us"><button>Contact Us</button></a></p>
-                    </div>
-                </div>
+                </div><!-- End feature -->
             </section><!------ End middle content-->
         </section><!---- End featured content container ------>
 
@@ -149,11 +97,10 @@
 
                 <!----------- Begin widget 1 -------------->
                 <div class="video-widget">
-                    <h3>Kickstarter Tips</h3>
-                    <p><iframe width="100%" height="205" src="https://www.youtube.com/embed/xgjMCwGQEys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <br/>Watch "6 Things To Do Before Going On Kickstarter (#5 Is CRITICAL!)" by Salvador Briggman
-                    <br/>
-                    <a href="https://www.youtube.com/watch?v=xgjMCwGQEys&feature=emb_title" target="_blank" alt="Watch on YouTube" title="Watch on YouTube"><button>Watch on YouTube</button></a></p>
+                    <h3>Kickstarter Success Demo</h3>
+                    <p><iframe src="img/app/KickstarterApp_Ismail.mp4" width="100%" height="205"></iframe>
+                    <br/>Watch a LIVE demo of the Kickstarter App presented by Ismail, a member of the <span class="dropcap">K</span>S<span class="checkmark">&#x2714;</span> team.
+                    </p>
                 </div>
 
                 <!------- Begin widget 2 ------------------>
@@ -235,8 +182,8 @@
                         <a href="index.html" title="Home">Home</a>
                         <a href="about.html" target="_blank" title="About Us">About Us</a>
                         <a href="https://kickstarter-success-1.vercel.app/" title="Our App" target="_blank">Our App</a>
-                        <a href="help.html" title="Help">Help</a>
-                        <a href="contact.html" title="Contact">Contact Us</a>
+                        <a href="how.html" title="How it Works">How it Works</a>
+                        <a href="#" class="active" title="Contact">Contact Us</a>
                     </section>
                 </section><!-- End Footer nav bar -->
             </section>

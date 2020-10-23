@@ -64,9 +64,15 @@ h1, h2, h3, h4, h5 {
     font-size: 2rem;
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
+    margin-top: .75rem;
     margin-bottom: 1.5rem;
     letter-spacing: .1rem;
     width: 100%;
+}
+h1 {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 h3 {
     font-size: 1.75rem;
@@ -76,6 +82,9 @@ p {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+}
+a {
+    color: #D03F0F;
 }
 ul,ol {
     color: black;
@@ -255,14 +264,14 @@ Main Content Styles
     border-right: 1px #d2d8d8 dashed;
     border-bottom: 1px #d2d8d8 dashed;
 }
-.top-content .first-feature .background-img .fourth-widget {
+.top-content .first-feature .background-img .first-widget {
     background: url("../img/pexels-fauxels-3184291.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid #bcb7b7;
     border-radius: .35rem;
 }
-.top-content .first-feature .background-img .fourth-widget h3 {
+.top-content .first-feature .background-img .first-widget h2 {
     font-size: 1.8rem;
     line-height: 1.8rem;
     width: 20rem;
@@ -271,7 +280,7 @@ Main Content Styles
     padding-bottom: 1.5rem;
     border-bottom: 1px #d2d8d8 dashed;
 }
-.top-content .first-feature .background-img .fourth-widget p {
+.top-content .first-feature .background-img .first-widget p {
     width: 25rem;
     padding: 2rem;
     padding-top: .5rem;
@@ -322,11 +331,6 @@ Slideshow Styles (working on getting this to function)
     border-right: 1px #d2d8d8 dashed;
     border-bottom: 1px #d2d8d8 dashed;
 }
-.middle-content .fifth-feature h2 {
-    font-size: 2rem;
-    padding-bottom: 1rem;
-    padding-left: 0;
-}
 .middle-content .fifth-feature .fifth-widget {
     display: flex;
 }
@@ -335,6 +339,12 @@ Slideshow Styles (working on getting this to function)
     margin-right: 1.25rem;
     border: 1px solid #bcb7b7;
     border-radius: .35rem;
+}
+.middle-content .fifth-feature .fifth-widget .icon {
+    width: 14px;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 .middle-content .sixth-seventh-feature {
     display: flex;
@@ -379,10 +389,6 @@ Slideshow Styles (working on getting this to function)
     margin-bottom: 1.25rem;
     border: 1px solid #bcb7b7;
     border-radius: .35rem;
-}
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
 }
 /********************************************************************************
 Sidebar Styles
@@ -602,6 +608,13 @@ Footer Navigation Menu Styles
 }
 .footer-container .footer-two .footer-nav .footer-navbar .nav-footer a:hover {
     background: #D03F0F;
+}
+
+.footer-container .footer-two .footer-nav .footer-navbar .nav-footer .active {
+    color: #D03F0F;
+}
+.footer-container .footer-two .footer-nav .footer-navbar .nav-footer .active:hover {
+    background: black;
 }
 /********************************************************************************
 Media Queries
