@@ -572,12 +572,13 @@ Footer Navigation Menu Styles
 .footer-container .footer-two .footer-nav {
     background: black;
 }
-.footer-container .footer-two .footer-nav .footer-navbar .nav-footer {
+.footer-container .footer-two .footer-nav .footer-navbar #nav-footer {
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
+    border: none;
 }
-.footer-container .footer-two .footer-nav .footer-navbar .nav-footer a {
+.footer-container .footer-two .footer-nav .footer-navbar #nav-footer a {
     clear: both;
     font-size: 1.25rem;
     text-align: center;
@@ -588,15 +589,16 @@ Footer Navigation Menu Styles
     letter-spacing: .25rem;
     color:whitesmoke;
     text-transform: uppercase;
+    border-right: none;
 }
-.footer-container .footer-two .footer-nav .footer-navbar .nav-footer a:hover {
+.footer-container .footer-two .footer-nav .footer-navbar #nav-footer a:hover {
     background: #D03F0F;
 }
 
-.footer-container .footer-two .footer-nav .footer-navbar .nav-footer .active {
+.footer-container .footer-two .footer-nav .footer-navbar #nav-footer .active {
     color: #D03F0F;
 }
-.footer-container .footer-two .footer-nav .footer-navbar .nav-footer .active:hover {
+.footer-container .footer-two .footer-nav .footer-navbar #nav-footer .active:hover {
     background: black;
 }
 /********************************************************************************
