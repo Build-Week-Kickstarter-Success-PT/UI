@@ -1,8 +1,9 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/************************************************************************************************
+CSS Reset
+http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+************************************************************************************************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,12 +30,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1.4rem;
-}
-ol, ul {
-	list-style: none;
-}
 blockquote, q {
 	quotes: none;
 }
@@ -47,16 +42,18 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 * {
     box-sizing: border-box;
 }
+/**********************************************************************************************
+Shenica's WEB Build 1 Project CSS
+**********************************************************************************************/
 html, body {
     height: 100%;
     font-family: 'Roboto', 'Rubik', sans-serif;
     font-size: 62.5%;
     color: #1F1D1B;
-    background-image: url(../img/index_wireframe_workshop.png);
+    line-height: 1.4;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -64,42 +61,45 @@ h1, h2, h3, h4, h5 {
     font-size: 2rem;
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
-    margin-top: .75rem;
+    margin-top: 0;
     margin-bottom: 1.5rem;
     letter-spacing: .1rem;
     width: 100%;
 }
 h1 {
-    font-size: 3rem;
-    margin-top: 1.5rem;
-    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 h3 {
     font-size: 1.75rem;
 }
 p {
     font-size: 1.6rem;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 a {
     color: #D03F0F;
 }
-ul,ol {
-    color: black;
+ol,li {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-left: 1rem;
+    padding-bottom: .25rem;
 }
 /***************************************************************************************
 Header Styles @import url(../css/header.css);
 ***************************************************************************************/
 header {
+    width: 100%;
     background: black;
     margin: 0;
     padding: 0;
 }
 header .title-social-member {
     background: black;
-    width: 100%;
+    width: 85%;
     position: absolute;
     top: 0;
     position: fixed;
@@ -115,6 +115,9 @@ header .title img {
 /*********************************************************************************************
 Social Menu Styles
 *********************************************************************************************/
+header .title-social-member {
+    width: 99%;
+}
 header .title-social-member .icon-bar, header .title-social-member .member-icon-bar {
     display:flex;
     justify-content: flex-end;
@@ -300,26 +303,15 @@ button {
 button:hover {
     background: #00C603;
 }
-/*********************************************************************************************
-Slideshow Styles (working on getting this to function)
-**********************************************************************************************/
-.top-content .first-feature .slider {
-    width: 99%;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    padding-bottom: 20px;
-    background: goldenrod;
-}
-
 /**************************************************************************************
- Middle Conent Styles 
+ Middle Content Styles 
  *************************************************************************************/
- .middle-content {
+.middle-content {
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     border-bottom: none;
 }
-.middle-content .fifth-feature {
+.middle-content .middle-feature {
     background: whitesmoke;
     width: 99%;
     padding: 1.5rem;
@@ -331,51 +323,37 @@ Slideshow Styles (working on getting this to function)
     border-right: 1px #d2d8d8 dashed;
     border-bottom: 1px #d2d8d8 dashed;
 }
-.middle-content .fifth-feature .fifth-widget {
+.middle-content .middle-feature .middle-widget {
     display: flex;
 }
-.middle-content .fifth-feature .fifth-widget img {
+.middle-content .middle-feature .middle-widget img {
     width: 30%;
     margin-right: 1.25rem;
     border: 1px solid #bcb7b7;
     border-radius: .35rem;
 }
-.middle-content .fifth-feature .fifth-widget .icon {
+.middle-content .middle-feature .middle-widget .icon {
     width: 14px;
     border: none;
     margin: 0;
     padding: 0;
 }
-.middle-content .sixth-seventh-feature {
+/**************************************************************************************
+ Bottom Content Styles 
+*************************************************************************************/
+.bottom-content {
+    width: 99%;
     display: flex;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    border-bottom: none;
+    justify-content: space-between;
 }
-.middle-content .sixth-seventh-feature .sixth-feature {
-    background: whitesmoke;
-    width: 48%;
-    margin-top: 2rem;
-    margin-right: 1.75rem;
-    padding: 1.5rem;
-    padding-bottom: 1.5rem;
-    border-top-right-radius: 2rem;
-    border-top-left-radius: 2rem;
-    border-left: .3rem #d2d8d8 dotted;
-    border-top: .3rem #d2d8d8 dotted;
-    border-right: 1px #d2d8d8 dashed;
-    border-bottom: 1px #d2d8d8 dashed;
-}
-.middle-content .sixth-seventh-feature .sixth-feature .sixth-widget img {
-    width: 100%;
-    margin-right: 1.25rem;
-    margin-bottom: 1.25rem;
-    border: 1px solid #bcb7b7;
-    border-radius: .35rem;
-}
-.middle-content .sixth-seventh-feature .seventh-feature {
+.bottom-content .bottom-feature {
     background: whitesmoke;
     width: 49%;
     margin-top: 2rem;
     padding: 1.5rem;
-    padding-bottom: 1.5rem;
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;
     border-left: .3rem #d2d8d8 dotted;
@@ -383,7 +361,8 @@ Slideshow Styles (working on getting this to function)
     border-right: 1px #d2d8d8 dashed;
     border-bottom: 1px #d2d8d8 dashed;
 }
-.middle-content .sixth-seventh-feature .seventh-feature .seventh-widget img {
+
+.bottom-content .bottom-feature .bottom-widget img {
     width: 100%;
     margin-right: 1.25rem;
     margin-bottom: 1.25rem;
@@ -620,8 +599,12 @@ Footer Navigation Menu Styles
 Media Queries
 ********************************************************************************/
 @media only screen and (max-width: 1024px) {
+    h2 {
+        font-size: 1.4rem;
+    }
     .top-content .second-feature .second-widget,
     .top-content .third-feature .third-widget,
+    .top-content .first-feature .background-img,
     .sidebar-container .widgets .image-widget .widget-img {
         flex-direction: column;
     }
@@ -629,6 +612,7 @@ Media Queries
     .top-content .third-feature .third-widget img,
     .sidebar-container .widgets .image-widget .widget-img img {
         width: 100%;
+        margin-bottom: .5rem;
     }
 }
 @media only screen and (max-width: 970px) {
@@ -642,11 +626,27 @@ Media Queries
     header .logo-ad .top-ad {
         display: none;
     }
+    .middle-content .fourth-feature .fourth-widget img {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 890px) {
+    #page-wrapper {
+        width: 99%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    header .title-social-member {
+        width: 98%;
+    }
+    .middle-content .fourth-feature .fourth-widget {
+        flex-direction: column;
+    }
+    .middle-content .fourth-feature .fourth-widget img {
+        width: 50%;
+    }
 }
 @media only screen and (max-width: 800px) {
-    header .logo-ad .top-ad {
-        display: none;
-    }
     .sidebar-container .widgets .testimonial-widget .testimonial p {
         width: 85%;
         color: whitesmoke;
@@ -662,10 +662,10 @@ Media Queries
     .featured-content-container {
         width: 99%; 
     }
-    .top-content .second-feature .second-widget img {
+    .featured-content .second-feature .second-widget img {
         width: 100%;
     }
-    .top-content .third-feature .third-widget img {
+    .featured-content .third-feature .third-widget img {
         width: 100%;
     }
     .sidebar-container {
@@ -687,10 +687,10 @@ Media Queries
     .featured-content-container {
         width: 99%; 
     }
-    .top-content .second-feature .second-widget img {
+    .featured-content .second-feature .second-widget img {
         width: 100%;
     }
-    .top-content .third-feature .third-widget img {
+    .featured-content .third-feature .third-widget img {
         width: 100%;
     }
     .sidebar-container {

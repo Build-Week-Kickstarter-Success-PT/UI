@@ -17,7 +17,8 @@
     <title>Kickstarter Success - Welcome</title>
 </head>
 <body>
-    <!-- Implementing subPage_wireframe ------------------------------->
+<!-- Implementing subPage_wireframe ------------------------------->
+<div id="page-wrapper">
     <header>
         <!-------------------- Begin title and Navigation Bar -------------------------------------->
         <section class="title-social-member">
@@ -55,7 +56,7 @@
         </section><!------ End logo ad div -->
     
         <!----------- Begin Top Nav Bar -------------------------------------------------------->
-        <section class="topnav">
+        <div id="topnav" role="navigation" aria-label="Main">
             <nav>
                 <a href="index.html" title="Home">Home</a>
                 <a href="about.html" target="_blank" title="About Us">About Us</a>
@@ -63,7 +64,7 @@
                 <a href="#" title="How it Works" class="active">How it Works</a>
                 <a href="contact.html" title="Contact">Contact Us</a>
             </nav>
-        </section><!-- End Topnav Bar -->
+        </div><!-- End Topnav Bar -->
     </header>
     
     <!----------- Begin Main Content ----------------------------------------------------------->
@@ -75,9 +76,9 @@
             <!----- Begin middle content ------------------------------------------------------->
             <section class="middle-content">
                 
-                <div class="fifth-feature">
+                <div class="middle-feature">
                     <h1>Help: How The Kickstarter Success App Works</h1>
-                    <div class="fifth-widget"><img src="img/app/app_1.png" alt="Kickstarter App Login Page" title="Kickstarter App Login Page">
+                    <div class="middle-widget"><img src="img/app/app_1.png" alt="Kickstarter App Login Page" title="Kickstarter App Login Page">
                         <p>Kick start your campaign with an edge up on the competition. Our app gives you detailed insight into building a successful Kickstarter campaign.
                         <br/><br/>
                         Kickstarter has opportunities for you in Arts, Comics & Illustration, Design & Tech, Film, Food & Craft, Games, Music, and Publishing. We have experience in each of these categories. Our experts can spark your creativity and help you save time and money on your Kickstarter campaign.
@@ -87,20 +88,22 @@
                     </div>
                     <br/><br/>
                         <h2>Getting Started</h2>
-                    <div class="fifth-widget">
+                    <div class="middle-widget">
                         <img src="img/app/app_2.png" alt="Kickstarter App Sign Up Page" title="Kickstarter App Sign Up Page">
-                        <p>1. Go to the <a href="https://kickstarter-success-1.vercel.app" target="_blank" alt="External link to Kickstarter Successs App" title="External link to Kickstarter Successs App">Kickstarter Success App</a> and click the "Sign Up" link (shown above). The Sign Up page displays.
-                            <br/>
-                            <br/>2. Enter a username in the "username" field.
+                        <p>
+                            <ol>
+                                <li>1. Go to the <a href="https://kickstarter-success-1.vercel.app" target="_blank" alt="External link to Kickstarter Successs App" title="External link to Kickstarter Successs App">Kickstarter Success App</a> and click the "Sign Up" link (shown above). The Sign Up page displays.</li>
+                                <li>Enter a username in the "username" field.</li>
                             <br/>3. Enter your valid email address in the email field.
                             <br/>4. Enter a password in the password field.
                             <br/>5. Click the "Sign Up" button to continue. The Login form displays.
                             <br/>6. Login with the username and password you created. Your user home page displays.
+                        </ol>
                         </p>
                     </div>
                     <br/><br/>
                         <h2>Creating a New Campaign Prediction</h2>
-                    <div class="fifth-widget">
+                    <div class="middle-widget">
                         <img src="img/app/app_4.png" alt="Kickstarter App Sign Up Page" title="Kickstarter App Sign Up Page">
                         <p>1. From your user home page, click the plus icon (<img src="img/app/app_3.png" class="icon" alt="plus icon" title="plus icon">) in the upper left corner of your browser window. The Campaign Prediction form displays.
                             <br/>
@@ -228,10 +231,6 @@
             </section>
         </section><!-- END copyright -->
     </section><!-- End footer -->
-    
-    <!-- Call the HTML include function-->
-    <script>
-        includeHTML();
-    </script>
+</div><!-- End page wrapper -->
 </body>
 </html>
