@@ -129,7 +129,7 @@ table {
   box-sizing: border-box;
 }
 .container {
-  border-bottom: 1px solid rgb(163, 163, 163);
+  border-bottom: 1px solid rgb(53, 52, 52);
   background: rgb(14, 14, 14);
   /* background-color: #f0f0f0; */
 }
@@ -367,8 +367,8 @@ span img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 1vw;
-  margin: 5%;
+  padding: 1em;
+  margin: 2%;
 }
 .bottom-content a {
   text-decoration: none;
@@ -510,7 +510,7 @@ h5 {
   background: #d03f0f;
 }
 .copyright img {
-  width: 100px;
+  width: 200px;
   display: inline-block;
 }
 .checkmark {
@@ -519,3 +519,14 @@ h5 {
 }
 
 /* media quieries css */
+
+@media only screen and (max-width: 1258px) {
+  .box img {
+    width: 10vw;
+  }
+}
+@media only screen and (max-width: 1154px) {
+  .box {
+    margin: 2vw;
+  }
+}
