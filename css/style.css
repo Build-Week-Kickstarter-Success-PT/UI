@@ -73,6 +73,11 @@ h1 {
 h3 {
     font-size: 1.75rem;
 }
+h4 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-weight: normal;
+}
 p {
     font-size: 1.6rem;
     margin: 0;
@@ -341,6 +346,24 @@ button:hover {
     border: none;
     margin: 0;
     padding: 0;
+}
+form {
+    background: hsl(29, 75%, 81%);
+    border: 1px solid #bcb7b7;
+    border-radius: .35rem;
+    padding: 1.5rem;
+}
+.middle-widget p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+form label {
+    font-weight: bold;
+}
+form input, form option, form select, form textarea {
+    font-size: 1.6rem;
+    width: 50%;
+    padding: .5rem;
 }
 /**************************************************************************************
  Bottom Content Styles 

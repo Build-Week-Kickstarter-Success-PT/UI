@@ -14,7 +14,7 @@
     <!-- Link Scripts -->
     <script src="https://kit.fontawesome.com/2563865650.js" crossorigin="anonymous"></script>
 
-    <title>Kickstarter Success - Welcome</title>
+    <title>Kickstarter Success - Contact Us</title>
 </head>
 <body>
 <!-- Implementing subPage_wireframe ------------------------------->
@@ -79,16 +79,34 @@
                 <div class="middle-feature">
                     <h1>Contact Us</h1>
                     <div class="middle-widget"><img src="img/pexels-tima-miroshnichenko-5453833.jpg" alt="Lady wearing phone headset" title="Contact Us">
-                        <p>We're Here to Help!
+                        <p><form name="contact" method="POST" data-netlify="true">
+                        <h4>Use the form below to contact us. For help with our Kickstarter Success App, view our "<a href="img/app/KickstarterApp_Ismail.mp4" target="_blank">Kickstarter Success Demo</a>" video. You can also review our "<a href="how.html" title="link to 'How it Works' page">How it Works</a>" page.
                         <br/><br/>
-                        Contact us to begin your Kickstarter campaign.
+                        <label>Your Name: <input type="text" name="name" /></label>   
                         <br/><br/>
-                        For help with our Kickstarter Success App, view our "<a href="img/app/KickstarterApp_Ismail.mp4" target="_blank">Kickstarter Success Demo</a>" video. You can also review our "<a href="how.html" title="link to 'How it Works' page">How it Works</a>" page.
-                        <br/>
-                        <br/>email: team@kickstartersuccess.com
-                        <br/>phone: 1 (888) 999 - 1010</p>
+                        <label>Your Email: <input type="email" name="email" /></label>
+                        <br/><br/>
+                        <label>Your Organization: <input type="text" name="organization" /></label>
+                        <br/><br/>
+                        <label>Your Website: <input type="website" name="website" /></label>
+                        <br/><br/>
+                        <label>Your Role: <select name="role[]" multiple>
+                            <option value="president-ceo">President or CEO</option>
+                            <option value="campaign-owner">Campaign Owner</option>
+                            <option value="team-member">Team Member</option>
+                            <option value="representative">Organization Representative</option>
+                            <option value="associate">Associate</option>
+                            <option value="independent">Independent</option>
+                            <option value="other">Other</option>
+                        </select></label>
+                        <br/><br/>
+                        <label>Message: <textarea name="message"></textarea></label>
+                        <br/><br/>
+                        <button type="submit">Send</button>
+                        </h4>
+                        </form>
                     </div>
-                </div><!-- End feature -->
+                </div><!-- End features -->
             </section><!------ End middle content-->
         </section><!---- End featured content container ------>
 
