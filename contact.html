@@ -17,7 +17,8 @@
     <title>Kickstarter Success - Welcome</title>
 </head>
 <body>
-    <!-- Implementing subPage_wireframe ------------------------------->
+<!-- Implementing subPage_wireframe ------------------------------->
+<div id="page-wrapper">
     <header>
         <!-------------------- Begin title and Navigation Bar -------------------------------------->
         <section class="title-social-member">
@@ -55,7 +56,7 @@
         </section><!------ End logo ad div -->
     
         <!----------- Begin Top Nav Bar -------------------------------------------------------->
-        <section class="topnav">
+        <div id="topnav" role="navigation" aria-label="Main">
             <nav>
                 <a href="index.html" title="Home">Home</a>
                 <a href="about.html" target="_blank" title="About Us">About Us</a>
@@ -63,7 +64,7 @@
                 <a href="how.html" title="How it Works">How it Works</a>
                 <a href="#" class="active" title="Contact">Contact Us</a>
             </nav>
-        </section><!-- End Topnav Bar -->
+        </div><!-- End Topnav Bar -->
     </header>
     
     <!----------- Begin Main Content ----------------------------------------------------------->
@@ -75,9 +76,9 @@
             <!----- Begin middle content ------------------------------------------------------->
             <section class="middle-content">
                 
-                <div class="fifth-feature">
+                <div class="middle-feature">
                     <h1>Contact Us</h1>
-                    <div class="fifth-widget"><img src="img/pexels-tima-miroshnichenko-5453833.jpg" alt="Lady wearing phone headset" title="Contact Us">
+                    <div class="middle-widget"><img src="img/pexels-tima-miroshnichenko-5453833.jpg" alt="Lady wearing phone headset" title="Contact Us">
                         <p>We're Here to Help!
                         <br/><br/>
                         Contact us to begin your Kickstarter campaign. For help with our Kickstarter Success App, view the walkthrough video at the top the right sidebar. You can also review our "<a href="how.html" title="link to 'How it Works' page">How it Works</a>" page.
@@ -195,10 +196,6 @@
             </section>
         </section><!-- END copyright -->
     </section><!-- End footer -->
-    
-    <!-- Call the HTML include function-->
-    <script>
-        includeHTML();
-    </script>
+</div><!-- End page wrapper -->
 </body>
 </html>
