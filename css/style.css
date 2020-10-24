@@ -73,6 +73,11 @@ h1 {
 h3 {
     font-size: 1.75rem;
 }
+h4 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-weight: normal;
+}
 p {
     font-size: 1.6rem;
     margin: 0;
@@ -342,6 +347,24 @@ button:hover {
     margin: 0;
     padding: 0;
 }
+form {
+    background: hsl(29, 75%, 81%);
+    border: 1px solid #bcb7b7;
+    border-radius: .35rem;
+    padding: 1.5rem;
+}
+.middle-widget p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+form label {
+    font-weight: bold;
+}
+form input, form option, form select, form textarea {
+    font-size: 1.6rem;
+    width: 50%;
+    padding: .5rem;
+}
 /**************************************************************************************
  Bottom Content Styles 
 *************************************************************************************/
@@ -572,12 +595,13 @@ Footer Navigation Menu Styles
 .footer-container .footer-two .footer-nav {
     background: black;
 }
-.footer-container .footer-two .footer-nav .footer-navbar .nav-footer {
+.footer-container .footer-two .footer-nav .footer-navbar #nav-footer {
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
+    border: none;
 }
-.footer-container .footer-two .footer-nav .footer-navbar .nav-footer a {
+.footer-container .footer-two .footer-nav .footer-navbar #nav-footer a {
     clear: both;
     font-size: 1.25rem;
     text-align: center;
@@ -588,15 +612,16 @@ Footer Navigation Menu Styles
     letter-spacing: .25rem;
     color:whitesmoke;
     text-transform: uppercase;
+    border-right: none;
 }
-.footer-container .footer-two .footer-nav .footer-navbar .nav-footer a:hover {
+.footer-container .footer-two .footer-nav .footer-navbar #nav-footer a:hover {
     background: #D03F0F;
 }
 
-.footer-container .footer-two .footer-nav .footer-navbar .nav-footer .active {
+.footer-container .footer-two .footer-nav .footer-navbar #nav-footer .active {
     color: #D03F0F;
 }
-.footer-container .footer-two .footer-nav .footer-navbar .nav-footer .active:hover {
+.footer-container .footer-two .footer-nav .footer-navbar #nav-footer .active:hover {
     background: black;
 }
 /********************************************************************************
