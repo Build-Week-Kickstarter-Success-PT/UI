@@ -28,25 +28,26 @@
 
             <!-----------------------  Begin KS Social Menu   ----------------------------------------->
             <div class="icon-bar">
-                <a class="active" href="#" title="Home"><i class="fa fa-home"></i></a> 
-                <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a> 
-                <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram-square"></i></a>
-                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter-square"></i></a>            
+                <a href="index.html" alt="Home" title="Home"><i class="fa fa-home"></i></a> 
+                <a href="https://www.facebook.com/ShenicaRGraham" alt="Facebook" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://github.com/Grahamattic" alt="GitHub" target="_blank" title="GitHub"><i class="fab fa-github"></i></a> 
+                <a href="https://www.instagram.com/shenicagraham/" alt="Instagram" target="_blank" title="Instagram"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://www.linkedin.com/in/shenicagraham" alt="LinkedIn" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#https://twitter.com/shenicagraham" alt="Twitter" target="_blank" title="Twitter"><i class="fab fa-twitter-square"></i></a>            
             </div>
     
             <!----------------------- Begin Member / Campaign Owner Links ---------------------->
             <div class="member-icon-bar">
                 <div class="icon-bar">
-                    <a href="https://kickstarter-success-1.vercel.app/login" target="_blank" alt="Member Login" title="Member Login"><i class="fas fa-sign-in-alt"></i></a> 
-                    <a href="https://kickstarter-success-1.vercel.app/signup" alt="Sign Up" title="Sign Up" target="_blank"><i class="far fa-user-circle"></i></a> 
-                    <a href="https://kickstarter-success-1.vercel.app/" target="_blank" alt="Predict Success" title="Predict Success"><i class="fas fa-clipboard-check"></a></i>
+                    <a href="https://kickstarter-success-1.vercel.app/login" alt="Member Login" target="_blank" title="Member Login"><i class="fas fa-sign-in-alt"></i></a> 
+                    <a href="https://kickstarter-success-1.vercel.app/signup" alt="Sign Up" target="_blank" title="Sign Up"><i class="far fa-user-circle"></i></a> 
+                    <a href="https://kickstarter-success-1.vercel.app/" alt="Predict Success" target="_blank" title="Predict Success"><i class="fas fa-clipboard-check"></a></i>
                 </div><!----------------------- End Social Menu -------------------------------->    
             </div><!-- End Member Menu Bar -->
         </section><!-- End title Social Member Menu Bar -->
     
         <!----------------------- Begin logo - ad div ------------------------------------------>
-        <section class="logo-ad">
+        <section role="banner" class="logo-ad">
             <div class="logo">
                 <img src="img/KickstarterSuccessLogo.png" alt="Kickstarter Success Motto" title="Kickstarter Success Motto"/>
             </div>
@@ -58,11 +59,12 @@
         <!----------- Begin Top Nav Bar -------------------------------------------------------->
         <div id="topnav">
             <nav id="topnavbar" role="navigation" aria-label="Main">
-                <a href="index.html" title="Home">Home</a>
-                <a href="about.html" target="_blank" title="About Us">About Us</a>
-                <a href="https://kickstarter-success-1.vercel.app/" title="Our App" target="_blank">Our App</a>
-                <a href="how.html" title="How it Works">How it Works</a>
-                <a href="#" class="active" title="Contact">Contact Us</a>
+                <a href="index.html" alt="Home" title="Home">Home</a>
+                <a href="about.html" alt="About Us" target="_blank" title="About Us">About Us</a>
+                <a href="demo.html" alt="Demo" title="Demo">Demo</a>
+                <a href="https://kickstarter-success-1.vercel.app/" alt="Our App" title="Our App" target="_blank">Our App</a>
+                <a href="how.html" alt="Help" title="Help">Help</a>
+                <a href="#" class="active" alt="Contact Us" title="Contact Us">Contact Us</a>
             </nav>
         </div><!-- End Topnav Bar -->
     </header>
@@ -82,15 +84,15 @@
                         <p><form name="contact" method="POST" data-netlify="true">
                         <h4>Use the form below to contact us. For help with our Kickstarter Success App, view our "<a href="img/app/KickstarterApp_Ismail.mp4" target="_blank">Kickstarter Success Demo</a>" video. You can also review our "<a href="how.html" title="link to 'How it Works' page">How it Works</a>" page.
                         <br/><br/>
-                        <label>Your Name: <input type="text" name="name" /></label>   
+                        <label for="name">Your Name: <input type="text" name="name" id="name" aria-label="name" /></label>   
                         <br/><br/>
-                        <label>Your Email: <input type="email" name="email" /></label>
+                        <label for="email">Your Email: <input type="email" name="email" id="email" aria-label="email" /></label>
                         <br/><br/>
-                        <label>Your Organization: <input type="text" name="organization" /></label>
+                        <label for="organization">Your Organization: <input type="text" name="organization" id="organization" aria-label="organization" /></label>
                         <br/><br/>
-                        <label>Your Website: <input type="website" name="website" /></label>
+                        <label for="website">Your Website: <input type="website" name="website" id="website" aria-label="website" /></label>
                         <br/><br/>
-                        <label>Your Role: <select name="role[]" multiple>
+                        <label for="role">Your Role: <select name="role[]" id="role" aria-label="role" multiple>
                             <option value="president-ceo">President or CEO</option>
                             <option value="campaign-owner">Campaign Owner</option>
                             <option value="team-member">Team Member</option>
@@ -100,9 +102,9 @@
                             <option value="other">Other</option>
                         </select></label>
                         <br/><br/>
-                        <label>Message: <textarea name="message"></textarea></label>
+                        <label for="message">Message: <textarea name="message" id="message" aria-label="message"></textarea></label>
                         <br/><br/>
-                        <button type="submit">Send</button>
+                        <button type="submit" id="submit">Send</button>
                         </h4>
                         </form>
                     </div>
@@ -179,10 +181,10 @@
 
                 <div class="text-container">
                     <h2>Company Links</h2>
-                    <p><a href="#">About Us</a></p>
-                    <p><a href="#">Meet Our team</a></p>
-                    <p><a href="#">Try Our App</a></p>
-                    <p><a href="#">Contact Us</a></p>
+                    <p><a href="about.html" alt="About Us" target="_blank" title="About Us">About Us</a></p>
+                    <p><a href="team/team.html" alt="Meet Our Team" target="Meet Our Team" title="Meet Our Team">Meet Our team</a></p>
+                    <p><a href="https://kickstarter-success-1.vercel.app/" alt="Try Our App" target="_blank" title="Try Our App">Try Our App</a></p>
+                    <p><a href="contact.html" alt="Contact Us" target="_blank" title="Contact Us">Contact Us</a></p>
                 </div>
                 <div class="middle-text-container">
                     <h2>Social Updates</h2>
@@ -200,11 +202,12 @@
             <section class="footer-nav">
                 <section class="footer-navbar">
                     <nav id="nav-footer" aria-label="Footer">
-                        <a href="index.html" title="Home">Home</a>
-                        <a href="about.html" target="_blank" title="About Us">About Us</a>
-                        <a href="https://kickstarter-success-1.vercel.app/" title="Our App" target="_blank">Our App</a>
-                        <a href="how.html"  title="How it Works">How it Works</a>
-                        <a href="#" class="active" title="Contact">Contact Us</a>
+                        <a href="index.html" alt="Home" title="Home">Home</a>
+                        <a href="about.html" alt="About Us" target="_blank" title="About Us">About Us</a>
+                        <a href="demo.html" alt="Demo" title="Demo">Demo</a>
+                        <a href="https://kickstarter-success-1.vercel.app/" alt="Our App" title="Our App" target="_blank">Our App</a>
+                        <a href="how.html" alt="Help" title="Help">Help</a>
+                        <a href="#" class="active" alt="Contact Us" title="Contact Us">Contact Us</a>
                     </nav>
                 </section><!-- End Footer nav bar -->
             </section>

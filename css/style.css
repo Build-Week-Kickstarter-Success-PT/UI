@@ -78,6 +78,18 @@ h4 {
     line-height: 1.4;
     font-weight: normal;
 }
+h5 {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+h5 p {
+    font-size: 1.65rem;
+    font-weight: normal;
+    margin-top: 1.5rem;
+}
 p {
     font-size: 1.6rem;
     margin: 0;
@@ -332,11 +344,17 @@ button:hover {
     border-right: 1px #d2d8d8 dashed;
     border-bottom: 1px #d2d8d8 dashed;
 }
-.middle-content .middle-feature .middle-widget {
+.middle-content .middle-feature .middle-widget, .middle-content .middle-feature .team-widget {
     display: flex;
 }
 .middle-content .middle-feature .middle-widget img {
-    width: 30%;
+    width: 40%;
+    margin-right: 1.25rem;
+    border: 1px solid #bcb7b7;
+    border-radius: .35rem;
+}
+.middle-content .middle-feature .team-widget img {
+    width: 15%;
     margin-right: 1.25rem;
     border: 1px solid #bcb7b7;
     border-radius: .35rem;
@@ -347,6 +365,9 @@ button:hover {
     margin: 0;
     padding: 0;
 }
+/**************************************************************************************
+ Form Styles 
+ *************************************************************************************/
 form {
     background: hsl(29, 75%, 81%);
     border: 1px solid #bcb7b7;
@@ -643,6 +664,7 @@ Media Queries
         width: 100%;
         margin-bottom: .5rem;
     }
+
 }
 @media only screen and (max-width: 970px) {
     body {
