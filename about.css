@@ -240,15 +240,16 @@ span img {
   margin-left: 2vw;
   width: 40vw;
 }
+
 /*TEAM SEC CSS STARTS HERE */
 .team-container {
   text-align: center;
   border-top: 1px solid rgb(199, 199, 199);
   height: 100%;
   width: 100%;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  margin-bottom: 2vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  /* margin-bottom: 2vw; */
   padding-bottom: 2vw;
   background-color: #ffffff;
 }
@@ -260,7 +261,7 @@ span img {
 .text h5 {
   position: relative;
   text-align: center;
-  font-size: 40px;
+  font-size: 3.5vw;
   color: #d23f0f;
   margin-bottom: 1em;
 }
@@ -276,27 +277,25 @@ span img {
 }
 .boxes {
   width: 100%;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 350px;
-  grid-gap: 2em;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
 }
 .box {
   position: relative;
   /* box-shadow: 3px 3px 5px rgb(172, 172, 172); */
-  padding: 4%;
+  padding: 2vw;
   max-width: 100%;
   height: 100%;
   border-radius: 10px;
   cursor: pointer;
   user-select: none;
   transition: 0.4s;
-  margin-bottom: 7%;
+  /* margin-bottom: 5%; */
 }
 .box img {
-  width: 220px;
-  height: 220px;
+  width: 13vw;
+  height: 13vw;
   border-radius: 50%;
   position: initial;
   top: 30%;
@@ -314,7 +313,7 @@ span img {
   transform: translateY(-50%);
 }
 .links a {
-  font-size: 25px;
+  font-size: 1.5vw;
   color: #030303;
   transition: 0.5s;
 }
@@ -336,15 +335,20 @@ span img {
   padding-right: 2vw;
   padding-left: 2vw;
 }
+.detail h4,
+.detail p:hover {
+  font-weight: bolder;
+}
+
 .detail h4 {
   color: #d23f0f;
-  font-size: 24px;
+  font-size: 1vw;
 }
 .detail p {
+  font-size: 1vw;
   color: #969696;
   text-align: center;
 }
-
 /* .box:hover {
   transform: scale(1.01);
   box-shadow: 5px 5px 20px lightgray;
@@ -359,29 +363,28 @@ span img {
 .bottom-content {
   text-align: center;
   border-top: 2px solid rgb(151, 151, 151);
-
-  padding-bottom: 5vw;
+  padding-bottom: 3vw;
   background-color: rgb(187, 187, 187);
 }
 .bottom-div {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 1em;
-  margin: 2%;
+  /* padding: 1em; */
+  margin: 1%;
 }
 .bottom-content a {
   text-decoration: none;
   border: 1px solid #333;
   border-radius: 100px;
-  font-size: 15px;
+  font-size: 1vw;
   font-weight: bolder;
   background-color: #f3f3f3;
   color: #d23f0f;
   line-height: 5;
-  padding: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0.5vw;
+  padding-left: 40px;
+  padding-right: 40px;
   transition: 2s;
 }
 .bottom-content a:hover {
@@ -390,11 +393,12 @@ span img {
   font-weight: bold;
 }
 h5 {
-  font-size: 26px;
+  font-size: 1.5vw;
   padding: 1em;
 }
+.bottom-content,
 .bottom-div p {
-  font-size: 24px;
+  font-size: 1vw;
 }
 /* FOOTER SEC CSS */
 .footer-container {
@@ -443,19 +447,25 @@ h5 {
 .footer-container .footer .footer-content .text-container h2,
 .footer-container .footer .footer-content .middle-text-container h2 {
   color: #939393;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
+  font-size: 1.5vw;
   font-weight: normal;
   padding-bottom: 1rem;
   border-bottom: 1px dotted #616060;
 }
 .footer-container .footer .footer-content .text-container a {
   color: #939393;
-  font-size: 1rem;
+  font-size: 1.2vw;
   font-weight: normal;
   text-decoration: none;
 }
 .footer-container .footer .footer-content .text-container a:hover {
   color: #d03f0f;
+}
+.middle-text-container p {
+  font-size: 1.1vw;
+  line-height: 1;
+  color: rgb(201, 201, 201);
 }
 .footer-container .footer .footer-content .middle-text-container {
   width: 32%;
@@ -485,18 +495,20 @@ h5 {
   padding: 0.2rem 0.3rem 0.2rem 0.6rem;
   font-size: 1.4rem;
 }
+
 /*Footer Navigation Menu Styles********************************/
 .footer-container .footer-two .footer-nav {
-  background: rgb(27, 27, 27);
+  background: rgb(14, 14, 14);
 }
 .footer-container .footer-two .footer-nav .footer-navbar nav {
   margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  /* padding-top: 0;
+  padding-bottom: 0; */
+  padding: 0.5em;
 }
 .footer-container .footer-two .footer-nav .footer-navbar nav a {
   clear: both;
-  font-size: 1.25rem;
+  font-size: 1.5vw;
   text-align: center;
   margin-right: 0;
   padding: 1rem 2.5rem;
@@ -519,14 +531,93 @@ h5 {
 }
 
 /* media quieries css */
-
-@media only screen and (max-width: 1258px) {
-  .box img {
-    width: 10vw;
+@media only screen and (max-width: 1555px) {
+  .box {
+    box-shadow: 2px 2px 5px rgb(172, 172, 172);
+    margin: 5vw;
+    padding: 3vw;
+  }
+  .team-container {
+    background-color: rgb(255, 242, 234);
   }
 }
-@media only screen and (max-width: 1154px) {
+
+@media only screen and (max-width: 1260px) {
+  .boxes {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+  }
   .box {
-    margin: 2vw;
+    margin: 4vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-area a {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+  }
+  .nav-area i {
+    margin-left: 0.5vw;
+  }
+  .imgDiv {
+    padding-left: 12%;
+    padding-right: 12%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .second-section {
+    margin-top: 2%;
+  }
+  h3 {
+    font-size: 2vw;
+    border-bottom: 2px solid #d23f0f;
+  }
+
+  .team-section {
+    padding: 7.5vw;
+  }
+
+  .section-title {
+    margin-left: 0;
+  }
+  .section-title p {
+    font-size: 2vw;
+  }
+  h2 {
+    font-size: 3vw;
+    margin-bottom: 1em;
+  }
+
+  span img {
+    margin-left: 0%;
+  }
+
+  .footer-container .footer-two .footer-nav .footer-navbar nav a {
+    padding: 1em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .containerTwoNav a {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .team-container {
+    background-color: rgb(245, 245, 245);
+  }
+  .team-section {
+    background-color: rgb(192, 192, 192);
+  }
+  .bottom-content {
+    background-color: rgb(216, 198, 190);
   }
 }
