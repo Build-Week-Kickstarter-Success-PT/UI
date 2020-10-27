@@ -128,65 +128,128 @@ table {
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  border-bottom: 1px solid rgb(163, 163, 163);
-  background: rgb(8, 8, 8);
-  /* background-color: #f0f0f0; */
-}
-.nav-area {
+
+/***************************************************************************************
+Header Styles @import url(../css/header.css);
+***************************************************************************************/
+header {
   width: 100%;
+  background: black;
+  margin: 0;
+  padding: 0;
+}
+header .title-social-member {
+  background: black;
+  width: 85%;
+  position: absolute;
+  top: 0;
+  position: fixed;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-around;
+  margin: 0;
+  padding-top: 0.75rem;
+  border-bottom: 1px solid #262424;
 }
-.nav-area a {
+header .title img {
+  margin: 0;
+  /* padding-bottom: 0.05rem; */
+}
+/*********************************************************************************************
+Social Menu Styles
+*********************************************************************************************/
+header .title-social-member {
+  width: 99%;
+}
+.title-social-member {
+  background: rgb(14, 14, 14);
+  display: flex;
+  justify-content: space-between;
+}
+.title-social-member .title img {
+  width: 11vw;
+  margin: 0.5em;
+}
+
+header .title-social-member .icon-bar,
+header .title-social-member .member-icon-bar {
+  display: flex;
+  justify-content: flex-end;
+  width: 30rem;
+  margin: 0 auto;
+}
+header .title-social-member .icon-bar {
+}
+.icon-bar {
+  /* margin-right: 4vw; */
+  /* margin-left: 20vw; */
+}
+.icon-bar a {
+  text-align: center;
+  margin-right: 1vw;
+  transition: all 0.3s ease;
+  color: whitesmoke;
+  font-size: 1vw;
+}
+.icon-bar a:hover {
+  background-color: #d03f0f;
+}
+/**********************************************************************************************
+Logo, Ad Banner Styles 
+***********************************************************************************************/
+.logo-ad {
+  width: 100%;
+  margin: 0;
+  margin: 0;
+  /* padding-top: 0.75rem; */
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+  background-color: black;
+}
+.logo-ad img {
+  width: 13vw;
+  border-right: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid grey;
+}
+/***********************************************************************************************
+Top Navigation Menu Styles
+***********************************************************************************************/
+#topnav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+}
+nav {
+  background: black;
+  /* margin-bottom: 1rem; */
+  padding-top: 0.5vw;
+  padding-bottom: 1vw;
+  border-bottom: 2px solid #030303;
+}
+nav a {
+  background: black;
+  clear: both;
+  font-size: 0.5vw;
+  text-align: center;
+  margin-right: 0;
+  padding: 1vw 2vw;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 17px;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  color: rgb(226, 226, 226);
-  padding-top: 2em;
+  letter-spacing: 0.25rem;
+  color: whitesmoke;
+  border-right: 0.1rem solid gray;
+  text-transform: uppercase;
 }
-.nav-area a:hover {
+nav a:hover {
+  background: #d03f0f;
+}
+.active {
   color: #d03f0f;
 }
-h1 {
-  font-size: 15px;
-  text-align: center;
-  font-weight: bold;
-  color: #d23f0f;
-  padding-left: 5%;
-  padding-bottom: 1em;
+.active:hover {
+  background: black;
 }
-img {
-  width: 200px;
-  margin: 5%;
-}
-.imgDiv {
-  align-items: center;
-  padding-left: 20%;
-  padding-right: 20%;
-  margin-left: 4vw;
-  margin-right: 4vw;
-}
-.containerTwo {
-  border-bottom: 1px solid rgb(230, 230, 230);
-  padding: 1em;
-  display: flex;
-  justify-content: center;
-  background: rgb(8, 8, 8);
-  border-bottom: 2px solid black;
-}
-.containerTwoNav a {
-  text-decoration: none;
-  color: rgb(226, 226, 226);
-  padding-left: 2em;
-  padding-right: 2em;
-}
-/* .containerTwoNav a:hover {
-  background-color: #d23f0f;
-} */
+
+/*  */
 
 h2 {
   font-size: 30px;
@@ -208,14 +271,15 @@ header {
   position: fixed;
 }
 .banner-area {
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  height: 55%;
   position: absolute;
   text-align: left;
-  background-image: url("../UI/images/working-remotely-1.png");
+  background-image: url("images/campaignn.jpg");
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 80%;
   background-position: center center;
 }
 .banner-area h3 {
@@ -223,6 +287,7 @@ header {
   padding-top: 10vw;
   padding-left: 2em;
   font-size: 50px;
+  font-weight: bolder;
   margin-bottom: 1em;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
@@ -248,91 +313,84 @@ header {
 .content-area {
   width: 100%;
   position: absolute;
-  /* top: 450px; */
-  top: 100%;
+  top: 59%;
   background-color: #ddd;
-  height: 1500px;
-  padding-bottom: 100%;
+  /* height: 1500px; */
+  /* padding-bottom: 100%; */
 }
 .content-area h4 {
   letter-spacing: 4px;
   padding-top: 30px;
-  font-size: 30px;
+  font-size: 2vw;
   margin: 0;
 }
 .content-area p {
   padding: 2% 0;
   line-height: 30px;
+  font-size: 0.95vw;
 }
 
 /* MAIN CONTENT CSS */
 
 .main-content {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
   border-bottom: 1px solid #929292;
-  margin: 3em;
-  /* padding: 2em; */
+  width: 100%;
+  padding: 2em;
+  margin
 }
-.main-text h6 {
-  font-size: 38px;
-  text-align: center;
-  color: #d03f0f;
-  /* height: 100%; */
-}
-#main-txt-div {
-  margin-bottom: 4rem;
-}
-#main-div-id {
-  margin-top: 2em;
+.main-text {
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  max-width: 100%;
+  padding: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 .main-text h5 {
-  font-size: 30px;
-  padding: 2em;
+  font-size: 1.5vw;
+  /* padding: 2em; */
+}
+.main-text p {
+  font-size: 0.75vw;
 }
 .main-text img {
-  width: 400px;
-  height: 250px;
-  border-radius: 55px;
+  width: 12vw;
+  height: 12vw;
+  padding-bottom: 1vw;
+  border-radius: 110px;
 }
-#icon {
-  position: absolute;
-  margin-left: 12%;
-}
+
 /* MID CONTENT */
 body {
   text-align: center;
 }
 .mid-content {
-  /* display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row; */
+  display: flex;
   border-bottom: 2px solid gray;
   margin: 3vw;
-  margin-top: 20vh;
-  padding-bottom: 5vw;
+  max-width: 100%;
+  /* margin-top: 20vh; */
+  padding-bottom: 1vw;
   text-align: center;
   justify-content: space-around;
 }
-.mid-content h6 {
-  font-size: 20px;
-  position: relative;
+.mid-content img {
+  width: 13vw;
+  height: 13vw;
+  padding-bottom: 1em;
+}
+.box-area h6 {
+  padding-top: 3em;
+  font-size: 2vw;
 }
 .mid-div {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  background-color: white;
   border: 1px solid rgb(109, 109, 109);
   width: 100%;
-  margin-top: 2em;
-  margin-right: 3em;
-
+  margin: 1vw;
+  padding: 1em;
   justify-content: center;
-  /* padding: 2em; */
-  /* height: 10%; */
 }
 .mid-div h5 {
   font-size: 30px;
@@ -344,6 +402,41 @@ body {
 }
 .mid-div a i {
   width: 300px;
+}
+
+
+/* CONTACT FORM */
+
+.contactwrapper {
+  width: 400px;
+  padding: 30px;
+  background-color: rgb(248, 248, 248);
+  margin: 0 auto;
+}
+.contactwrapper h6 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.contactwrapper input[type=text],
+.contactwrapper input[type=email]{
+  height: 40px;
+}
+.contactwrapper input[type=text],
+.contactwrapper input[type=email],
+textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  border: none;
+  border: 1px solid #2b2b2b;
+}
+.contactwrapper a {
+  text-decoration: none;
+  background-color: rgb(230, 109, 109);
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: .85vw;
+  color: #000000;
 }
 
 /* <!-- search bar --> */
@@ -373,10 +466,14 @@ form.example button:hover {
   background: #d23f0f;
 }
 
-/* FOOTER SEC CSS */
+/* Footer */
+/* Styles
+  ********************************************************************************/
 .footer-container {
-  background: rgb(8, 8, 8);
-  /* margin-top: 60vh; */
+  background-color: black;
+}
+.footer {
+  background-color: black;
 }
 .footer-container .footer {
   width: 100%;
@@ -388,7 +485,7 @@ form.example button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #282525;
 }
 .footer-container .footer-two {
   width: 100%;
@@ -396,16 +493,16 @@ form.example button:hover {
   left: 0;
   bottom: 0;
   padding-top: 1.15rem;
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.8rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #616060;
+  border-bottom: 1px solid #282525;
 }
 .footer-container .footer .footer-content {
   display: flex;
-  color: #a39e9e;
+  color: #939393;
   margin: 0 2% 2rem;
   padding-bottom: 1rem;
   justify-content: space-around;
@@ -416,27 +513,29 @@ form.example button:hover {
   margin-right: 4rem;
   padding-right: 4rem;
   text-align: left;
-  border-right: 5px solid #616060;
-}
-.middle-text-container p {
-  color: rgb(226, 226, 226);
+  border-right: 5px solid #282525;
 }
 .footer-container .footer .footer-content .text-container h2,
 .footer-container .footer .footer-content .middle-text-container h2 {
-  color: rgb(226, 226, 226);
-  font-size: 1.6rem;
+  color: #939393;
+  font-size: 1.5vw;
   font-weight: normal;
   padding-bottom: 1rem;
-  color: rgb(226, 226, 226);
+  border-bottom: 1px dotted #2b2b2b;
 }
 .footer-container .footer .footer-content .text-container a {
-  color: rgb(226, 226, 226);
-  font-size: 1rem;
+  color: #939393;
+  font-size: 1.2vw;
   font-weight: normal;
   text-decoration: none;
 }
 .footer-container .footer .footer-content .text-container a:hover {
   color: #d03f0f;
+}
+.middle-text-container p {
+  font-size: 1.1vw;
+  line-height: 1;
+  color: rgb(201, 201, 201);
 }
 .footer-container .footer .footer-content .middle-text-container {
   width: 32%;
@@ -444,7 +543,7 @@ form.example button:hover {
   margin-top: 4rem;
   margin-right: 4rem;
   text-align: left;
-  border-right: 5px solid #616060;
+  border-right: 5px solid #282525;
 }
 .footer-container .footer .footer-content .text-container:last-child {
   width: 25%;
@@ -457,46 +556,69 @@ form.example button:hover {
 }
 .footer .copyright-container .copyright {
   text-align: center;
-  color: rgb(226, 226, 226);
-  font-size: 1.4rem;
+  color: grey;
+  font-size: 1.1vw;
   margin-top: -1.25rem;
   padding-top: 0;
   padding-bottom: 0;
   letter-spacing: 0.25em;
+}
+.footer .copyright-container .copyright a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.checkmark {
+  color: #00c603;
+  font-size: 1.1vw;
+}
+.dropcap {
+  background-color: #d03f0f;
+  margin-right: 0.5rem;
   padding: 0.2rem 0.3rem 0.2rem 0.6rem;
   font-size: 1.4rem;
 }
-/*Footer Navigation Menu Styles********************************/
+/***********************************************************************************************
+  Footer Navigation Menu Styles
+  ***********************************************************************************************/
 .footer-container .footer-two .footer-nav {
-  background: rgb(8, 8, 8);
+  background: black;
 }
-.footer-container .footer-two .footer-nav .footer-navbar nav {
+.footer-two {
+  background-color: black;
+}
+.footer-container .footer-two .footer-nav .footer-navbar #nav-footer {
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
+  border: none;
 }
-.footer-container .footer-two .footer-nav .footer-navbar nav a {
+.footer-container .footer-two .footer-nav .footer-navbar #nav-footer a {
   clear: both;
-  font-size: 1.25rem;
+  font-size: 1vw;
   text-align: center;
   margin-right: 0;
-  padding: 1rem 2.5rem;
+  margin-bottom: 1.25rem;
+  padding: 0.9rem 2.5rem;
   text-decoration: none;
   letter-spacing: 0.25rem;
   color: rgb(226, 226, 226);
-  border-right: none;
   text-transform: uppercase;
+  border-right: none;
 }
-.footer-container .footer-two .footer-nav .footer-navbar nav a:hover {
+.footer-container .footer-two .footer-nav .footer-navbar #nav-footer a:hover {
   background: #d03f0f;
 }
-.copyright img {
-  width: 100px;
-  display: inline-block;
+
+.footer-container .footer-two .footer-nav .footer-navbar #nav-footer .active {
+  color: #d03f0f;
 }
-.checkmark {
-  float: right;
-  padding-top: 2%;
+.footer-container
+  .footer-two
+  .footer-nav
+  .footer-navbar
+  #nav-footer
+  .active:hover {
+  background: black;
 }
 
 /* media quieries css */
